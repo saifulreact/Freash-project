@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* ========================== common css start ====================================== */
+/* ================================ common css part start ================================ */
 *{
     margin: 0;
     padding: 0;
@@ -7,104 +7,128 @@
     box-sizing: border-box;
 
 }
-ul,li{
+ul,ol{
     list-style: none;
+
 }
 a{
     text-decoration: none;
     display: inline-block;
 }
-img{
-    vertical-align: middle;
-    width: 100%;
-    max-width: 100%;
-}
-p,h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
-}
-/* ========================== common css end ====================================== */
-/* ========================== Navbar part css start ====================================== */
-
 .container{
     width: 1320px;
     margin: 0 auto;
-}
-#navbar{
-    background: #FAE3B6;
-}
-.logo_col{
-    width: 133px;
-    height: 72px;
-    margin-top: 47px;
-}
-.menu{
-    width: 647px;
-    height: 36px;
-    margin-top: 66px;
-}
-.menu ul {
-    display: flex;
-    gap: 59px;
-}
-.menu ul li a{
-    font-size: 24px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #000000;
 
 }
-.menu .btn a{
-    gap: 10px;
+.btn{
+    width:319px ;
+    height: 86px;
+    background: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 86px;
+        font-family: "Poppins", sans-serif;
+
+    font-weight: 600;
+    font-size: 24px;
 }
-#navbar .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-  
+/* ================================ common css part end ================================ */
+
+/* =================================== navbar part start ================================ */
+#main_menu{
+    padding-top: 52px;
+    position: absolute;
     
 }
+.menu_row{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_row .logo_col a img{
+    width: 133px;
+}
+.menu_row .menu_text ul{
+    display: flex;
+    gap: 59px;
 
-.btn a{
-    width: 121px;
-    height: 57px;
-    border: 1px solid #FFD687;
-    line-height: 57px;
-    text-align: center;
+}
+.menu_row .menu_text ul li a {
     font-size: 24px;
     font-weight: 600;
-      font-family: "Poppins", sans-serif;
-      color: #000000;
-      border-radius: 10px;
-      background: transparent;
-      transition: all linear .3s;
-      box-shadow: #0000005d;
-      margin-top: 56px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    transition: all linear .3s;
+}
+.menu_row .menu_text ul li a:hover{
+    color: #fdbb57;
+}
+.menu_row .menu_button{
+    gap: 10px;
+    display: flex;
+}
+.menu_row .menu_button a {
+    width: 120px;
+    height: 56px;
+    background: #FFD687;
+    border-radius: 10px;
+  
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    transition: all linear .3s;
+    line-height: 57px;
+    text-align: center;
+    border: 1px solid #FFD687;
+   box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+
 
 
 }
-.btn a:hover{
-    background: #FDBB57;
+.menu_row .menu_button a:hover{
+    /* background: #FDBB57; */
+    background: transparent;
+    
 }
-/* ========================== Navbar part css end ====================================== */
-/* ========================== banner_part_start css start ====================================== */
-.banner_part_start .text_col{
-    width:434px;
+/* =================================== navbar part end ================================ */
+
+/* ==================================== banner part start ===========================-= */
+#banner_part_start{
+    width: 100%;
+    height: 1012px;
+    background: #FAE3B6;
+    position: relative;
+  
+
+}
+.banner_row{
+    padding-top: 134px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner_row .banner_text h1{
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    width: 449px;
     height: 263px;
 
-}
 
-/* ========================== banner_part_start css end ====================================== */
-/* ========================== common css start ====================================== */
-/* ========================== common css end ====================================== */
-/* ========================== common css start ====================================== */
-/* ========================== common css end ====================================== */
-/* ========================== common css start ====================================== */
-/* ========================== common css end ====================================== */
-/* ========================== common css start ====================================== */
-/* ========================== common css end ====================================== */
-/* ========================== common css start ====================================== */
-/* ========================== common css end ====================================== */
-/* ========================== common css start ====================================== */
-/* ========================== common css end ====================================== */
+
+}
+.banner_row .banner_text p{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    width: 531px;
+    height: 128px;
+    margin-top: 38px;
+    margin-bottom: 76px;
+
+
+
+}
+/* ==================================== banner part end ===========================-= */
